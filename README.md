@@ -26,3 +26,6 @@
     - limit > 0 : regex로 입력한 문자를 기준으로 분리하되 limit의 개수만큼 배열을 생성
     - limit = 0 : regex로 입력한 문자를 기준으로 분리 (길이가 0인 문자열은 무시)
     - limit < 0 : regex로 입력한 문자를 기준으로 분리하되 길이가 0인 문자열도 포함
+- Integer Class 내장 메소드
+  - Integer.bitCount() : int타입의 숫자를 2진수로 변환한 값에서 1의 개수를 반환해주는 메서드
+  - Integer.toBinaryString() : String Type으로 입력한 숫자의 2진수값을 반환해주는 메서드
