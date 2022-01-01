@@ -40,3 +40,13 @@
   ```
 
   - 영어 소문자만 존재하는지 확인하기 위한 정규식 사용 > 정규식은 추가 공부 필요(2022-01-01)
+
+- ArrayList<Integer> -> int[] 변환
+
+  ```java
+  ArrayList<Integer> resultTuple = new ArrayList<>();
+  ...
+  int[] answer = resultTuple.stream().mapToInt(tuple->tuple).toArray();
+  ```
+  - stream.mapToInt()를 이용하여 변환할 수 있음.
+  - `IntStream` (원시적 인 int 값의 시퀀스)을 반환하는`mapToInt()`메서드
