@@ -21,11 +21,22 @@
 ## 📄 학습 내용 
 
 - String 클래스 split()메소드 
+
   - split(String regex, int limit) : 인자로 구분자(regex)와 limit을 입력
   - 인자 limit 
     - limit > 0 : regex로 입력한 문자를 기준으로 분리하되 limit의 개수만큼 배열을 생성
     - limit = 0 : regex로 입력한 문자를 기준으로 분리 (길이가 0인 문자열은 무시)
     - limit < 0 : regex로 입력한 문자를 기준으로 분리하되 길이가 0인 문자열도 포함
+
 - Integer Class 내장 메소드
+
   - Integer.bitCount() : int타입의 숫자를 2진수로 변환한 값에서 1의 개수를 반환해주는 메서드
   - Integer.toBinaryString() : String Type으로 입력한 숫자의 2진수값을 반환해주는 메서드
+
+- Pattern.matches()
+
+  ```java
+  Pattern.matches("^[a-z]*$", "비교문자");
+  ```
+
+  - 영어 소문자만 존재하는지 확인하기 위한 정규식 사용 > 정규식은 추가 공부 필요(2022-01-01)
