@@ -50,3 +50,12 @@
   ```
   - stream.mapToInt()를 이용하여 변환할 수 있음.
   - `IntStream` (원시적 인 int 값의 시퀀스)을 반환하는`mapToInt()`메서드
+
+- String 문자열 Reverse(뒤집기)
+
+  ```java
+  String binary = "1100100";
+  binary = new StringBuilder(binary).reverse().toString();
+  // 결과값 : "0010011"
+  ```
+
